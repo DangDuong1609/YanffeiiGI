@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "YanffeiGI",
+    "slug": "YanffeiGI",
+    "version": "1.0.4",
+    "orientation": "portrait",
+    "icon": "./assets/iconAyaka.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/Kamisato_ayaka.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/iconAyaka.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.dangha1609.YanffeiGI"
+    },
+    "web": {
+      "favicon": "./assets/iconAyaka.png"
+    }
+  }
+}
