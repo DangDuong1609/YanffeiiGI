@@ -49,19 +49,29 @@ const ExploreTheWorld = () => {
             width: '100%',
             backgroundColor: '#d3bc8d',
         },
+        ExploretheWordTop: {
+            top: -150,
+        },
     });
     return (
-        <View className="flex-1 p-5 bg-gray-400 rounded-2xl pb-3 items-center mx-4 space-x-2 -top-24 m-4">
-            <View className="flex-row items-center justify-center w-64 mr-3 h-24 relative rounded-md block">
+        <View
+            className="flex-1 p-5 rounded-2xl pb-3 items-center mx-4 space-x-2 m-4"
+            style={styles.ExploretheWordTop}
+        >
+            <View className="flex-row items-center justify-center mr-3 h-24 relative rounded-md block">
                 <ImageBackground
-                    source={require('../../../assets/city_icon_ChasmsMaw.png')}
-                    className="flex-shrink"
+                    source={require('../../../../assets/city_icon_ChasmsMaw.png')}
+                    className="flex-shrink right-5"
+                    imageStyle={{ borderRadius: 3}}
+                    style={{
+                        width: 328,
+                    }}
                 >
                     <View
                         className="h-full relative flex-row items-center pl-2 pr-3"
                     >
                         <Image
-                            source={require('../../../assets/UI_ChapterIcon_ChasmsMaw.png')}
+                            source={require('../../../../assets/UI_ChapterIcon_ChasmsMaw.png')}
                             className="w-20 h-20 -left-1 top-0"
                         />
                         <View
@@ -90,14 +100,18 @@ const ExploreTheWorld = () => {
             </View>
             <View className="flex-row -left-1 mt-1 items-center justify-center">
                 <ImageBackground
-                    source={require('../../../assets/city_icon_ChasmsMaw.png')}
-                    className="flex-shrink items-center justify-center w-64 mr-3 h-24 relative rounded-md block "
+                    source={require('../../../../assets/city_icon_ChasmsMaw.png')}
+                    className="flex-shrink mr-3 h-24 right-6"
+                    imageStyle={{ borderRadius: 3}}
+                    style={{
+                        width: 328,
+                    }}
                 >
                     <View
                         className="h-full relative flex-row items-center pl-2 pr-3 w-full"
                     >
                         <Image
-                            source={require('../../../assets/UI_ChapterIcon_ChasmsMaw.png')}
+                            source={require('../../../../assets/UI_ChapterIcon_ChasmsMaw.png')}
                             className="w-20 h-20 -left-1 top-0"
                         />
                         <View
@@ -127,14 +141,18 @@ const ExploreTheWorld = () => {
             </View>
             <View className="flex-row -left-1 mt-1">
                 <ImageBackground
-                    source={require('../../../assets/city_icon_Enkanomiya.png')}
-                    className="flex-shrink items-center justify-center w-64 mr-3 h-24 relative rounded-md block "
+                    source={require('../../../../assets/city_icon_Enkanomiya.png')}
+                    className="flex-shrink mr-3 h-24 right-6 "
+                    imageStyle={{ borderRadius: 3}}
+                    style={{
+                        width: 328,
+                    }}
                 >
                     <View
                         className="h-full relative flex-row items-center pl-2 pr-3 w-full"
                     >
                         <Image
-                            source={require('../../../assets/UI_ChapterIcon_Enkanomiya.png')}
+                            source={require('../../../../assets/UI_ChapterIcon_Enkanomiya.png')}
                             className="w-20 h-20 -left-1 top-0"
                         />
                         <View
@@ -164,14 +182,18 @@ const ExploreTheWorld = () => {
             </View>
             <View className="flex-row -left-1 mt-1">
                 <ImageBackground
-                    source={require('../../../assets/city_icon_Daoqi.png')}
-                    className="flex-shrink items-center justify-center w-64 mr-3 h-24 relative rounded-md block "
+                    source={require('../../../../assets/city_icon_Daoqi.png')}
+                    className="flex-shrink mr-3 h-24 right-6"
+                    imageStyle={{ borderRadius: 3}}
+                    style={{
+                        width: 328,
+                    }}
                 >
                     <View
                         className="h-full relative flex-row items-center pl-2 pr-3 w-full"
                     >
                         <Image
-                            source={require('../../../assets/UI_ChapterIcon_Daoqi.png')}
+                            source={require('../../../../assets/UI_ChapterIcon_Daoqi.png')}
                             className="w-20 h-20 -left-1 top-0"
                         />
                         <View
@@ -201,14 +223,18 @@ const ExploreTheWorld = () => {
             </View>
             <View className="flex-row -left-1 mt-1">
                 <ImageBackground
-                    source={require('../../../assets/city_icon_Dragonspine.png')}
-                    className="flex-shrink items-center justify-center w-64 mr-3 h-24 relative rounded-md block "
+                    source={require('../../../../assets/city_icon_Dragonspine.png')}
+                    className="flex-shrink mr-3 h-24 right-6"
+                    imageStyle={{ borderRadius: 3}}
+                    style={{
+                        width: 328,
+                    }}
                 >
                     <View
                         className="h-full relative flex-row items-center pl-2 pr-3 w-full"
                     >
                         <Image
-                            source={require('../../../assets/UI_ChapterIcon_Dragonspine.png')}
+                            source={require('../../../../assets/UI_ChapterIcon_Dragonspine.png')}
                             className="w-20 h-20 -left-1 top-0"
                         />
                         <View
@@ -238,14 +264,18 @@ const ExploreTheWorld = () => {
             </View>
             <View className="flex-row -left-1 mt-1">
                 <ImageBackground
-                    source={require('../../../assets/city_icon_Liyue.png')}
-                    className="flex-shrink items-center justify-center w-64 mr-3 h-24 relative rounded-md block "
+                    source={require('../../../../assets/city_icon_Liyue.png')}
+                    className="flex-shrink mr-3 h-24 right-6"
+                    imageStyle={{ borderRadius: 3}}
+                    style={{
+                        width: 328,
+                    }}
                 >
                     <View
                         className="h-full relative flex-row items-center pl-2 pr-3 w-full"
                     >
                         <Image
-                            source={require('../../../assets/UI_ChapterIcon_Liyue.png')}
+                            source={require('../../../../assets/UI_ChapterIcon_Liyue.png')}
                             className="w-20 h-20 -left-1 top-0"
                         />
                         <View
@@ -275,14 +305,18 @@ const ExploreTheWorld = () => {
             </View>
             <View className="flex-row -left-1 mt-1">
                 <ImageBackground
-                    source={require('../../../assets/city_icon_Mengde.png')}
-                    className="flex-shrink items-center justify-center w-64 mr-3 h-24 relative rounded-md block "
+                    source={require('../../../../assets/city_icon_Mengde.png')}
+                    className="flex-shrink mr-3 h-24 right-6"
+                    imageStyle={{ borderRadius: 3}}
+                    style={{
+                        width: 328,
+                    }}
                 >
                     <View
                         className="h-full relative flex-row items-center pl-2 pr-3 w-full"
                     >
                         <Image
-                            source={require('../../../assets/UI_ChapterIcon_Mengde.png')}
+                            source={require('../../../../assets/UI_ChapterIcon_Mengde.png')}
                             className="w-20 h-20 -left-1 top-0"
                         />
                         <View

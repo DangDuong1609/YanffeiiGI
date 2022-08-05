@@ -31,13 +31,13 @@ const Header = () => {
             <View className="flex-1 items-center justify-center">
                 <Image
                     source={
-                        require('../../../assets/bannerAyaka.png')
+                        require('../../../../assets/bannerAyaka.png')
                     }
                     className="h-40 p-4 rounded-l-2xl"
                     style={styles.bannerImages}
                 />
                 <View
-                    className="-top-36 left-40"
+                    className="-top-32 left-40"
                 >
                     <PencilIcon size={19} color="blue" />
                 </View>
@@ -47,13 +47,11 @@ const Header = () => {
                 style={styles.AvatarImages}
             >
                 <Image
-                    source={{
-                        uri: "https://cdn.tgdd.vn/2020/10/GameApp/genshin-impact-229455-logo-30-09-2020-180x180-2.png",
-                    }}
-                    className="w-20 h-20 p-4 rounded-full left-4 border-4 align-top"
+                    source={require('../../../../assets/AvatarYoimiya.png')}
+                    className="w-20 h-20 p-4 rounded-full left-4 border-4 align-top bg-white"
                 />
                 <Image
-                    source={require('../../../assets/avatarKhung.png')}
+                    source={require('../../../../assets/avatarKhung.png')}
                     className="w-24 h-24 p-4 rounded-full right-20 block translate-x-1/2 pointer-events-none z-10"
                 // style={styles.avatar__pendant}
                 />

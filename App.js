@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
   droidSafeArea: {
     flex: 1,
     justifyContent: 'center',
+    resizeMode: 'cover',
     paddingTop: Platform.OS === 'android' ? 0 : 25
   },
 });

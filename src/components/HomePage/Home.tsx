@@ -4,16 +4,17 @@ import { useNavigation } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 
-import CommunityGameReCordSea from "./CommunityGameReCordSea";
-import Header from "./Header";
-import CharacterIcon from "./CharacterIcon";
-import ExploreTheWorld from "./ExploreTheWorld";
-import SereniteaPot from "./SereniteaPot";
+import CommunityGameReCordSea from "./ProfileYanffeii/CommunityGameReCordSea";
+import Header from "./HeaderYanffeii/Header";
+import CharacterIcon from "./CharacterYanffeii/CharacterIcon";
+import ExploreTheWorld from "./ExploreTheWorldYanffeii/ExploreTheWorld";
+import SereniteaPot from "./SereniteaPotYanffeii/SereniteaPot";
+import EventReview from "./EventReviewYanffeii/EventReview";
 
 const Home = () => {
     const navigation = useNavigation();
-    // const image = { uri: 'https://cdn.sforum.vn/sforum/wp-content/uploads/2022/02/2-15.jpg' };
-    const image = { uri: 'https://64.media.tumblr.com/fb9e7880420029972b3ef41c0ec7789f/c434e0208f496794-3e/s640x960/54d4f45577609cf4cacd3509bad1fe4d85c82852.gifv' };
+    const image = { uri: 'https://storage.qoo-img.com/cimg/note/2022/04/11/2bcfb9af92d9123e0bfabf888fee601d.jpg' };
+    // const image = { uri: 'https://64.media.tumblr.com/fb9e7880420029972b3ef41c0ec7789f/c434e0208f496794-3e/s640x960/54d4f45577609cf4cacd3509bad1fe4d85c82852.gifv' };
 
     useLayoutEffect(() => {
         navigation.setOptions({
@@ -29,9 +30,13 @@ const Home = () => {
             fontWeight: 'bold',
         },
         droidSafeArea: {
-          flex: 1,
-          justifyContent: 'center',
-          paddingTop: Platform.OS === 'android' ? -36 : 25
+            flex: 1,
+            //   justifyContent: 'center',
+            resizeMode: 'cover',
+            paddingTop: Platform.OS === 'android' ? -36 : -36
+        },
+        ExploretheWord: {
+            top: -120,
         },
     });
 
@@ -43,10 +48,12 @@ const Home = () => {
             style={styles.droidSafeArea}
         >
             <SafeAreaView
-            // className="flex-1 justify-center items-center"
-            style={styles.droidSafeArea}
+                // className="flex-1 justify-center items-center"
+                style={styles.droidSafeArea}
             >
-                <ScrollView>
+                <ScrollView
+                    keyboardShouldPersistTaps='always'
+                >
                     {/* Header */}
                     <Header />
                     {/* Chiến Tích */}
@@ -77,7 +84,8 @@ const Home = () => {
                     <CharacterIcon />
                     {/* Explore The World */}
                     <View
-                        className="left-row mb-4 pl-3 flex items-center text-black font-bold w-36 -top-20"
+                        className="left-row mb-4 pl-3 flex items-center text-black font-bold w-36"
+                        style={styles.ExploretheWord}
                     >
                         <Text
                             className="bg-orange-400 absolute w-1 h-4 rounded-sm left-4 -top-0"
@@ -90,7 +98,20 @@ const Home = () => {
                     <ExploreTheWorld />
                     {/* SereniteaPot */}
                     <View
-                        className="left-row mb-4 pl-3 flex items-center text-black font-bold w-36 -top-24"
+                        className="left-row mb-4 pl-3 flex items-center text-black font-bold w-36 -top-40"
+                    >
+                        <Text
+                            className="bg-orange-400 absolute w-1 h-4 rounded-sm left-4 -top-0"
+                        ></Text>
+                        <Text
+                            className="-left-2"
+                            style={styles.summaryBlock}
+                        >Ấm Trần Ca</Text>
+                    </View>
+                    <SereniteaPot />
+                    {/* Event Review */}
+                    <View
+                        className="left-row mb-4 pl-3 flex items-center text-black font-bold w-36 -top-40"
                     >
                         <Text
                             className="bg-orange-400 absolute w-1 h-4 rounded-sm left-4 -top-0"
@@ -98,9 +119,9 @@ const Home = () => {
                         <Text
                             className="left-2"
                             style={styles.summaryBlock}
-                        >Ấm Trần Ca</Text>
+                        >Xem Lại Sự Kiện</Text>
                     </View>
-                    <SereniteaPot />
+                    <EventReview />
                 </ScrollView>
             </SafeAreaView>
         </ImageBackground>
