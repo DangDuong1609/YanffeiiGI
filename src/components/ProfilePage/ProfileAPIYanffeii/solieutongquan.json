@@ -1,0 +1,74 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "number": "465",
+            "name": "Số ngày hoạt động"
+        },
+        {
+            "id": "2",
+            "number": "492",
+            "name": "Số thành tựu đạt được"
+        },
+        {
+            "id": "3",
+            "number": "40",
+            "name": "Số nhân vật nhận được"
+        },
+        {
+            "id": "4",
+            "number": "190",
+            "name": "Mở khóa điểm dịch chuyển"
+        },
+        {
+            "id": "5",
+            "number": "66",
+            "name": "Phong Thần Đồng"
+        },
+        {
+            "id": "6",
+            "number": "131",
+            "name": "Nham Thần Đồng"
+        },
+        {
+            "id": "7",
+            "number": "181",
+            "name": "Lôi Thần Đồng"
+        },
+        {
+            "id": "8",
+            "number": "35",
+            "name": "Mở khóa Bí Cảnh"
+        },
+        {
+            "id": "9",
+            "number": "-",
+            "name": "La Hoàn Thâm Cảnh"
+        },
+        {
+            "id": "10",
+            "number": "181",
+            "name": "Số Rương Hiếm"
+        },
+        {
+            "id": "11",
+            "number": "282",
+            "name": "Rương Siêu Cấp"
+        },
+        {
+            "id": "12",
+            "number": "1063",
+            "name": "Rương Cao Cấp"
+        },
+        {
+            "id": "13",
+            "number": "1330",
+            "name": "Rương Thường"
+        },
+        {
+            "id": "14",
+            "number": "44",
+            "name": "Số lượng Rương Kỳ Dị"
+        }
+    ]
+}

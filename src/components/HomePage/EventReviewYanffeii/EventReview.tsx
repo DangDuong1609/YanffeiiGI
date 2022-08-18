@@ -23,11 +23,17 @@ const EventReview = () => {
             height: 45,
             resizeMode: 'stretch',
         },
-        EventReviewViewRollBG: {
+        EventReviewViewRollEvent: {
             width: 45,
             height: 45,
             resizeMode: 'stretch',
             top: 5,
+        },
+        EventReviewViewRollBG: {
+            width: 45,
+            height: 45,
+            resizeMode: 'stretch',
+            // top: -5,
             margin: 0,
             position: 'absolute',
             opacity: 1,
@@ -36,9 +42,10 @@ const EventReview = () => {
             width: 45,
             height: 45,
             resizeMode: 'stretch',
-            bottom: 8,
+            // bottom: 10,
             position: 'absolute',
             opacity: 1,
+            // top: -5,
         },
     });
 
@@ -77,7 +84,8 @@ const EventReview = () => {
                                     className="flex-row"
                                 >
                                     <View
-                                        className="relative w-20 h-20 mr-6 items-center justify-center"
+                                        className="flex-1 mr-6 relative block bg-red-700 -top-9"
+                                        style={styles.EventReviewViewRollEvent}
                                     >
                                         <Image
                                             source={require('../../../../assets/activitybg.png')}
@@ -95,11 +103,12 @@ const EventReview = () => {
                                         />
                                     </View>
                                     <View
-                                        className="relative w-20 h-20 mr-6 block"
+                                        className="relative mr-6 block top-12"
+                                        style={styles.EventReviewViewRollEvent}
                                     >
                                         <Image
                                             source={require('../../../../assets/defaultbg.png')}
-                                            className="w-20 h-20 opacity-100 left-0 right-0 bottom-0 top-0 m-auto absolute"
+                                            style={styles.EventReviewViewRollBG}
                                         />
                                         {/* <Image
                                             source={require('../../../../assets/defaultbg.png')}
@@ -107,7 +116,7 @@ const EventReview = () => {
                                         /> */}
                                         <Image
                                             source={require('../../../../assets/PerilousTrailActiveIcon.png')}
-                                            className="w-20 h-20 opacity-100 block left-0 right-0 bottom-0 top-0 m-auto absolute"
+                                            style={styles.EventReviewViewRollImages}
                                         />
                                     </View>
                                 </Text>
